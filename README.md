@@ -23,7 +23,7 @@ Si te falta alguno, sigue el tutorial `tutoriales/01-instalacion-entorno.md` del
    cd bodega-pos
    ```
 3. **Ponle el nombre de tu producto** en dos lugares (así tus contenedores no se mezclan con los
-   de un compañero): la línea `name: mi-producto` de `docker-compose.yml` y el campo `"name"` de
+   de un compañero): la línea `name: recetas-y-listasdecompras` de `docker-compose.yml` y el campo `"name"` de
    `package.json`. Usa minúsculas y guiones, por ejemplo `bodega-pos`.
 4. **Instala las dependencias:**
    ```bash
