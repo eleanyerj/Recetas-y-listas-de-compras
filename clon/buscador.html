@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscar recetas — El sazón criollo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="cabecera">
+    <div class="contenedor cabecera-inner">
+      <a class="marca" href="index.html">El sazón <span>criollo</span></a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="buscador.html">Buscar recetas</a>
+        <a href="recetas.html">Receta del día</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <h1>Buscar recetas</h1>
+    <p>Filtra por nombre, ingrediente o momento del día.</p>
+
+    <form id="form-busqueda" aria-label="Filtros de recetas">
+      <label for="input-busqueda">Palabra clave</label>
+      <input
+        id="input-busqueda"
+        type="search"
+        placeholder="Ej. arepa, maíz, pollo..."
+        autocomplete="off"
+      />
+
+      <label for="select-categoria">Categoría</label>
+      <select id="select-categoria">
+        <option value="todas">Todas</option>
+        <option value="Desayuno">Desayuno</option>
+        <option value="Almuerzo">Almuerzo</option>
+        <option value="Cena">Cena</option>
+      </select>
+    </form>
+
+    <section aria-labelledby="titulo-resultados">
+      <h2 id="titulo-resultados">Resultados</h2>
+      <div id="resultados-busqueda" class="grid-recetas" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="cabecera">
+    <div class="contenedor">
+      <p>El sazón criollo — Búsqueda y filtrado local.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
